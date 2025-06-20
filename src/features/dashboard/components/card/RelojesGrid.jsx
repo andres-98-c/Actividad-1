@@ -1,4 +1,4 @@
-import Card from "../card/Card";
+import Card from "./Card";
 
 const relojes = [
   { nombre: "Technomarine", precio: 25000000, foto: "/imagenes/tecno1.png" },

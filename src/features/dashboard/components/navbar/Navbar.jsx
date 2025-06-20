@@ -12,10 +12,10 @@ function Navbar() {
 
       {/* /* Enlaces de navegación */ }
       <ul className="nav-links">       
-        <li><a href="#">Inicio</a></li>
+        <li><a href="http://localhost:5174/#">Inicio</a></li>
         <li><a href="#">Marcas</a></li>
         <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Registrarse</a></li>
         <li><a href="#">Sobre Nosotros</a></li>
       </ul>
 

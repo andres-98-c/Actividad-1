@@ -20,7 +20,7 @@ function ProductQuantity({ foto, nombre, precio }) {
       <div className="card-content">
         <h3>{nombre}</h3>
         <p>Precio: ${precio}</p>
-        <button className="comprar-btn">Comprar</button>
+        <button className="comprar-btn">Agregar al carrito</button>
         <div className="quantity-controls">
           <button type="button" onClick={decreaseQuantity}>
             -

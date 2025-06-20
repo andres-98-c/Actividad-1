@@ -1,9 +1,9 @@
 
-import Navbar from "./components/navbar/Navbar";
-import Carousel from "./components/carousel/Carousel";
-import Footer from "./components/footer/footer";
-import Contact from "./components/contact/Contact";
-import RelojesGrid from "./components/card/RelojesGrid";
+import Navbar from "./features/dashboard/components/navbar/Navbar";
+import Carousel from "./features/dashboard/components/carousel/Carousel";
+import Footer from "./features/dashboard/components/footer/footer";
+import Contact from "./features/dashboard/components/contact/Contact";
+import RelojesGrid from "./features/dashboard/components/card/RelojesGrid";
 function App() {
   return (
     <>      
