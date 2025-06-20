@@ -7,7 +7,7 @@ import RelojesGrid from "./components/card/RelojesGrid";
 function App() {
   return (
     <>      
-      <Navbar />
+      
       <Carousel/>
       <RelojesGrid/>
       <Contact/>
