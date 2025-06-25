@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; 
-import Logo from '../logo/Logo';
+import Logo from './Logo'; // Asegúrate de que la ruta sea correcta
 
 function Footer() {
   return (
@@ -29,11 +29,9 @@ function Footer() {
         <div className="social-media">
           <h3>Síguenos</h3>
           <a href="https://wa.me/1234567890" target="_blank" rel="whatsapp">
-            <img src="whatsapp.webp" alt="WhatsApp" />
+            <img src="/src/assets/imagenes/whatsapp.webp" alt="WhatsApp" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="instagram">
-            <img src="instagram.webp" alt="instagram" />
-          </a>
+          
         </div>
 
         
