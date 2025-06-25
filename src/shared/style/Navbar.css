@@ -60,3 +60,26 @@
 .search-box button:hover {
     background-color: #45a049; /* Color de fondo del botón al pasar el ratón */
 }
+.cart-container {
+  position: relative;
+  margin-left: 20px;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #24a8e0;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.9em;
+}

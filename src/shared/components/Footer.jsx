@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; 
+import '../style/Footer.css'; 
 import Logo from './Logo'; // Asegúrate de que la ruta sea correcta
 
 function Footer() {
@@ -28,28 +28,9 @@ function Footer() {
             <li><a href="#">Contacto</a></li>
           </ul>
         </div>
-        {/* Redes sociales */}
-        <div className="social-media">
-<<<<<<<< HEAD:src/features/dashboard/components/footer/Footer.jsx
-          {/* Aquí puedes poner otros iconos de redes si quieres */}
-========
-          <h3>Síguenos</h3>
-          <a href="https://wa.me/1234567890" target="_blank" rel="whatsapp">
-            <img src="/src/assets/imagenes/whatsapp.webp" alt="WhatsApp" />
-          </a>
-          
->>>>>>>> consumirApi:src/shared/components/Footer.jsx
-        </div>
+       
       </div>
-      {/* Botón flotante de WhatsApp */}
-      <a
-        href="https://wa.me/573245705063"
-        className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/whatsapp.webp" alt="WhatsApp" />
-      </a>
+      
     </footer>
   );
 }
