@@ -1,0 +1,54 @@
+/* Estilos generales para el footer */
+.footer {
+    background-color: #33333300; /* Color de fondo del footer */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+/* Estilos para la información de contacto */
+.contact-info, .quick-links, .social-media {
+    flex: 1; /* Cada sección ocupa un tercio del ancho */
+    padding: 0 20px; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces rápidos */
+.quick-links ul {
+    list-style: none; /* Eliminamos los puntos de la lista */
+    padding: 0; /* Eliminamos el relleno */
+}
+
+.quick-links li {
+    margin-bottom: 10px; /* Margen inferior para separar los enlaces */
+}
+
+.quick-links a {
+    color: rgb(0, 0, 0); /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminamos el subrayado de los enlaces */
+}
+
+.quick-links a:hover {
+    color: #000000; /* Color del texto de los enlaces al pasar el ratón */
+}
+
+/* Estilos para el icono de WhatsApp */
+.social-media img {
+    width: 50px; /* Ancho del icono */
+    height: 50px; /* Altura del icono */
+}
+
+/* Estilos para los derechos de autor */
+.copyright {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Margen superior */
+    padding-top: 20px; /* Espaciado interno superior */
+    border-top: 1px solid #5555553e; /* Borde superior */
+}
