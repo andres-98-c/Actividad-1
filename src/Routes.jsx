@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './shared/components/Navbar.jsx';
 import Footer from './shared/components/Footer.jsx';
-import Carousel from './features/home/Carousel.jsx';
-import RelojesGrid from './features/home/RelojesGrid.jsx';
-import Contact from './features/home/Contact.jsx';
+import Carousel from './features/home/pages/carousel/Carousel.jsx';
+import RelojesGrid from './features/home/pages/cardsRelojes/RelojesGrid.jsx';
+import Contact from './features/home/pages/contac/Contact.jsx';
 import WhatsAppButton from './shared/components/WhatsAppButton.jsx';
 
 function Routes() {

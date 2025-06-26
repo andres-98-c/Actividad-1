@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import '../../shared/style/Contact.css'; 
+import '../contac/Contact.css'; 
 
 const MySwal = withReactContent(Swal);
 

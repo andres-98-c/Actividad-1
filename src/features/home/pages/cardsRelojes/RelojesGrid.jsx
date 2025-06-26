@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import '../../shared/style/RelojesGrid.css'; 
+import './RelojesGrid.css'; 
 
 function RelojesGrid({ addToCart }) {
   const [productos, setProductos] = useState([]);

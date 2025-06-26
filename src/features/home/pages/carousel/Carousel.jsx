@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
-import { carousel } from '../../imageData/ImageData.jsx';
+import './Carousel.css';  
+import { carousel } from '../../../../imageData/ImageData.js';
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
