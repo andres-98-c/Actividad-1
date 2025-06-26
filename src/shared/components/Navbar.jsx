@@ -3,7 +3,7 @@ import '../style/Navbar.css';
 import Logo from './Logo';
 import Cart from './Cart';
 
-function Navbar({ cart, removeFromCart }) {
+function Navbar({ cart, removeFromCart, updateQuantity }) {
   const [showCart, setShowCart] = useState(false);
   const totalItems = cart.reduce((sum, item) => sum + item.cantidad, 0);
 
@@ -26,12 +26,14 @@ function Navbar({ cart, removeFromCart }) {
       <div className="cart-container">
         <button className="cart-btn" onClick={() => setShowCart(true)}>
           🛒
+          {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
         </button>
         {showCart && (
           <Cart
             cart={cart}
             removeFromCart={removeFromCart}
-            onClose={() => setShowCart(false)} // PASA ESTA FUNCIÓN
+            updateQuantity={updateQuantity}
+            onClose={() => setShowCart(false)}
           />
         )}
       </div>

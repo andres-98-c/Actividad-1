@@ -22,6 +22,16 @@ function Routes() {
     return [...prev, { ...producto, cantidad }];
   });
 };
+// Actualizar cantidad desde el carrito
+const updateQuantity = (id, cantidad) => {
+  setCart(prev =>
+    prev.map(item =>
+      item.id === id
+        ? { ...item, cantidad: cantidad > 0 ? cantidad : 1 }
+        : item
+    )
+  );
+};
 
   // Eliminar del carrito
   const removeFromCart = (id) => {
@@ -30,7 +40,11 @@ function Routes() {
 
   return (
     <>
-      <Navbar cart={cart} removeFromCart={removeFromCart} />
+      <Navbar 
+        cart={cart} 
+        removeFromCart={removeFromCart}      
+        updateQuantity={updateQuantity}
+      />
       <Carousel />
       <RelojesGrid addToCart={addToCart} />
       <Contact />
@@ -41,24 +55,3 @@ function Routes() {
 }
 
 export default Routes;
-
-// import React from 'react'
-// import Navbar from './shared/components/Navbar.jsx'
-// import Footer from './shared/components/Footer.jsx'
-// import Carousel from './features/home/Carousel.jsx'
-// import RelojesGrid from './features/home/RelojesGrid.jsx'
-// import Contact from './features/home/Contact.jsx'
-
-// function Routes() {
-//   return (
-//     <>
-//     <Navbar/>
-//     <Carousel/>
-//     <RelojesGrid/>
-//     <Contact/>
-//     <Footer/>
-//     </>
-//   )
-// }
-
-// export default Routes
