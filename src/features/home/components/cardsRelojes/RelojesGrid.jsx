@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useCart } from '../../../../shared/contexts/CartContext'; // Ajusta la ruta si es necesario
 import './RelojesGrid.css'; 
 
-function RelojesGrid({ addToCart }) {
+function RelojesGrid() {
+  const { addToCart } = useCart();
   const [productos, setProductos] = useState([]);
   const [quantities, setQuantities] = useState([]);
 

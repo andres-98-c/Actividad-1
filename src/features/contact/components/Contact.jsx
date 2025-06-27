@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import '../contac/Contact.css'; 
+import './Contact.css';
 
 const MySwal = withReactContent(Swal);
 
@@ -18,14 +18,14 @@ function Contact() {
     switch (field) {
       case 'nombre':
       case 'apellido':
-        if (value.length < 5 || value.length > 30) return 'Debe tener entre 5 y 30 caracteres.';
-        if (!/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(value)) return 'No se permiten números ni símbolos.';
+        if (value.trim().length < 6) return 'Debe tener al menos 6 caracteres.';
+        if (!/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(value)) return 'Solo letras y espacios, sin puntos ni símbolos.';
         break;
       case 'email':
-        if (!value.includes('@')) return 'El email debe contener el carácter @.';
+        if (!value.includes('@') || value.trim() === '') return 'Debe ser un email válido y obligatorio.';
         break;
       case 'celular':
-        if (value.length < 7 || value.length > 10) return 'Debe tener entre 7 y 10 dígitos.';
+        if (value.length < 7) return 'Debe tener al menos 7 dígitos.';
         if (!/^[0-9]+$/.test(value)) return 'Solo se permiten números.';
         break;
       default:

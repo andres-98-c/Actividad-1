@@ -1,6 +1,6 @@
 import React from 'react';
-import '../style/style.css';
-import whatsappIcon from '../../assets/imagenes/whatsapp.webp'; // Importa la imagen
+import './WhatsAppButton.css';
+import whatsappIcon from '../../../assets/imagenes/whatsapp.webp'; 
 
 function WhatsAppButton() {
   const phoneNumber = '573001234567'; // Número con código de país

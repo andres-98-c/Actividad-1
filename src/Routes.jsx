@@ -1,57 +1,22 @@
-import React, { useState } from 'react';
-import Navbar from './shared/components/Navbar.jsx';
-import Footer from './shared/components/Footer.jsx';
-import Carousel from './features/home/pages/carousel/Carousel.jsx';
-import RelojesGrid from './features/home/pages/cardsRelojes/RelojesGrid.jsx';
-import Contact from './features/home/pages/contac/Contact.jsx';
-import WhatsAppButton from './shared/components/WhatsAppButton.jsx';
-
-function Routes() {
-  // Estado global del carrito
-  const [cart, setCart] = useState([]);
-
-  // Agregar al carrito
-  const addToCart = (producto, cantidad = 1) => {
-  setCart(prev => {
-    const idx = prev.findIndex(item => item.id === producto.id);
-    if (idx !== -1) {
-      const updated = [...prev];
-      updated[idx].cantidad += cantidad;
-      return updated;
-    }
-    return [...prev, { ...producto, cantidad }];
-  });
-};
-// Actualizar cantidad desde el carrito
-const updateQuantity = (id, cantidad) => {
-  setCart(prev =>
-    prev.map(item =>
-      item.id === id
-        ? { ...item, cantidad: cantidad > 0 ? cantidad : 1 }
-        : item
-    )
-  );
-};
-
-  // Eliminar del carrito
-  const removeFromCart = (id) => {
-    setCart(prev => prev.filter(item => item.id !== id));
-  };
-
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './features/home/pages/HomePage.jsx';
+import Navbar from './shared/components/navbar/Navbar.jsx';
+import Footer from './shared/components/footer/Footer.jsx';
+import ContactPage from './features/contact/pages/ContactPage.jsx';
+function AppRoutes() {
   return (
-    <>
-      <Navbar 
-        cart={cart} 
-        removeFromCart={removeFromCart}      
-        updateQuantity={updateQuantity}
-      />
-      <Carousel />
-      <RelojesGrid addToCart={addToCart} />
-      <Contact />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+      </Routes>
       <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+    </BrowserRouter>
+  )
+};
 
-export default Routes;
+export default AppRoutes;
+
+

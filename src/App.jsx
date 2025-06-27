@@ -1,14 +1,9 @@
-import Routes from "./Routes";
-import '../src/shared/style/style.css'
+import React from 'react';
+import AppRoutes from './Routes.jsx';
+import './shared/style/style.css';
 
 function App() {
-  return (
-    <>      
-      
-      <Routes />
-      
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;

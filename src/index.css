@@ -1,6 +1,6 @@
 body {
-  background-color: #c4d8ef;
-  margin: 15px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+  background: #f4f8fb; /* Azul muy claro, casi blanco */
+  color: #222;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
