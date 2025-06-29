@@ -1,0 +1,50 @@
+.mini-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 24px auto;
+  width: 100vw;           /* Ocupa todo el ancho de la ventana */
+  max-width: 100vw;       /* No se pasa del ancho de la ventana */
+  background: #f4f8fb;
+  border-radius: 0;       /* Sin bordes redondeados para que llegue a los extremos */
+  padding: 12px 0;
+  box-shadow: 0 2px 8px #1565c022;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.mini-carousel-track {
+  display: flex;
+  gap: 12px;
+}
+
+.mini-carousel-img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1.5px solid #1976d2;
+  background: #fff;
+}
+
+.mini-carousel-btn {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-carousel-btn:hover {
+  background: #1976d2;
+}

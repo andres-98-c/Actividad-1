@@ -12,7 +12,10 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Logo />
+      
+      <Link to="/" className="logo-link">
+        <Logo />
+      </Link>
       
       <ul className="nav-links">
         <li><Link to="/">Inicio</Link></li>

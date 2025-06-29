@@ -1,0 +1,140 @@
+.contact-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #1565c022;
+}
+
+.contact-page h1,
+.contact-description {
+  text-align: center;
+}
+
+.contact-description {
+  margin-bottom: 18px;
+  font-size: 1.08em;
+  color: #222;
+}
+
+.contact-main-row {
+  display: flex;
+  align-items: stretch
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.contact-info-box {
+  flex: 1 1 420px;
+  min-width: 320px;
+  max-width: 480px;
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 8px #1565c022;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-right-box {
+  flex: 1 1 480px;
+  min-width: 340px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: transparent;
+  height: 100%;
+}
+
+.contact-form-box,
+.advisors-box {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 8px #1565c022;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-info-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info-box li {
+  margin-bottom: 6px;
+  font-size: 1em;
+}
+
+.contact-map {
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 180px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.advisors-box {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px #1565c022;
+}
+
+.advisors-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.advisors-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advisors-box li {
+  margin-bottom: 14px;
+  font-size: 1em;
+}
+
+.advisors-box a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.advisors-box a:hover {
+  text-decoration: underline;
+  color: #1976d2;
+}
+
+@media (max-width: 900px) {
+  .contact-main-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .contact-info-box,
+  .contact-right-box {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+.whatsapp-button {
+  z-index: 9999 !important;
+}

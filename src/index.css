@@ -4,3 +4,15 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
+.home-contact-container {
+  max-width: 420px;
+  margin: 48px auto 0 auto;
+  padding: 0 12px;
+}
+.home-contact-title {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 12px;
+  font-size: 1.3em;
+  font-weight: 600;
+}

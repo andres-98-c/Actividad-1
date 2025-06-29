@@ -29,7 +29,7 @@ export const carousel = [
     { src: rolex2, alt: "Reloj Rolex 2" },
 
 ];
-export const imageData = [
+export const imagedata = [
   { src: relojes3, alt: "Reloj 3" },
   { src: icono3, alt: "Icono 3" },
   { src: icono5, alt: "Icono 5" },
@@ -48,3 +48,4 @@ export const imageData = [
   { src: rOyster, alt: "Rolex Oyster" },
   { src: tCruise, alt: "TechnoMarine Cruise" }
 ];
+export default imagedata;

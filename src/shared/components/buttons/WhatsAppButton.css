@@ -22,3 +22,8 @@
   width: 32px;
   height: 32px;
 }
+@keyframes whatsapp-pop {
+  0% { transform: scale(0.7);}
+  80% { transform: scale(1.1);}
+  100% { transform: scale(1);}
+}

@@ -1,25 +1,29 @@
 /* Estilos generales para el carousel */
 .carousel {
     position: relative;
-    max-width: 1100px; /* Más ancho */
-    width: 100%;
-    margin: auto;
+    width: 100vw;           /* Ocupa todo el ancho de la ventana */
+    max-width: 100vw;       /* No se pasa del ancho de la ventana */
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
     overflow: hidden;
+    border-radius: 0;
 }
 
 /* Estilos para el contenedor de las imágenes */
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 500px; /* Más alto */
-    align-items: center; /* Centra verticalmente las imágenes */
+    height: 500px; /* Puedes ajustar la altura si lo deseas */
+    align-items: center;
 }
 
 /* Cada item del carousel */
 .carousel-item {
     min-width: 100%;
     display: none;
-    height: 100%; /* Ocupa todo el alto del contenedor */
+    height: 100%;
 }
 
 .carousel-item.active {
@@ -28,10 +32,10 @@
 
 /* Estilos para las imágenes del carousel */
 .carousel-item img {
-    width: 100%; /* Ocupa todo el ancho del item */
-    height: 100%; /* Ocupa todo el alto del item */
-    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; /* Sin bordes redondeados para que llegue a los extremos */
 }
 
 /* Estilos para los controles del carousel */
