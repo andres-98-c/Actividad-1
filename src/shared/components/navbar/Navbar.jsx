@@ -23,6 +23,11 @@ function Navbar() {
         <li><Link to="/productos">Productos</Link></li>
         <li><Link to="/contacto">Contacto</Link></li>
         <li><Link to="/sobre-nosotros">Sobre Nosotros</Link></li>
+        <li className="login-li">
+          <Link to='/login' className="login-link">
+            Iniciar Sesión
+          </Link>
+        </li>
       </ul>
 
       <div className="search-box">

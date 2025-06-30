@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
   align-items: center;
   background: #1565c0;
   color: #fff;
@@ -15,7 +16,8 @@
 .navbar .logo {
   max-height: 28px;   /* Ajusta aquí el tamaño del logo */
   width: auto;
-  margin-right: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
   vertical-align: middle;
 }
 
@@ -96,4 +98,22 @@
   color: #fff;
   font-weight: bold;
   line-height: 1;
+}
+.nav-links .login-link {
+  margin-left: 18px;
+  background: #1976d2;
+  color: #fff !important;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 14px;
+  font-size: 0.95em;
+  transition: background 0.15s;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 1px 4px #1565c022;
+  display: inline-block;
+}
+
+.nav-links .login-link:hover {
+  background: #0d47a1;
 }

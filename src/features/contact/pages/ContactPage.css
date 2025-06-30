@@ -1,6 +1,6 @@
 .contact-page {
-  max-width: 1200px;
-  margin: 40px auto;
+  max-width: 1450px;
+  margin: 10px auto;
   padding: 32px 24px;
   background: #fff;
   border-radius: 12px;
@@ -52,11 +52,12 @@
 .contact-form-box,
 .advisors-box {
   background: #f4f8fb;
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 24px 20px;
   box-shadow: 0 2px 8px #1565c022;
   width: 100%;
   box-sizing: border-box;
+  margin-left: 330px;
 }
 
 .contact-info-box h3 {
@@ -84,7 +85,7 @@
 
 .contact-map iframe {
   width: 100%;
-  height: 180px;
+  height: 500px;
   border: 0;
   border-radius: 8px;
 }
@@ -133,6 +134,9 @@
   .contact-right-box {
     max-width: 100%;
     min-width: 0;
+  }
+  .contact-form-box {
+    margin-left: 0; 
   }
 }
 .whatsapp-button {

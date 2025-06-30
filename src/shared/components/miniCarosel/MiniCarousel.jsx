@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './MiniCarousel.css';
-import imagedata from '../../contexts/ImageData.js'; // Ajusta la ruta si es necesario
+import imagedata from '../../contexts/ImageData.js'; 
 
-const VISIBLE = 3; // Número de imágenes visibles
+const VISIBLE = 5; 
 
 function MiniCarousel() {
   if (!Array.isArray(imagedata) || imagedata.length === 0) {
@@ -17,6 +17,12 @@ function MiniCarousel() {
 
   const prev = () => setStart((prev) => (prev - 1 + imagedata.length) % imagedata.length);
   const next = () => setStart((prev) => (prev + 1) % imagedata.length);
+
+  // Avance automático cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(next, 3000);
+    return () => clearInterval(interval);
+  }, [start]); // Dependencia en start para reiniciar el intervalo al cambiar
 
   // Calcula las imágenes visibles
   const visibleImages = [];

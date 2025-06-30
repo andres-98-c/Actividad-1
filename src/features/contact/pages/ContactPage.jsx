@@ -6,8 +6,8 @@ import MiniCarousel from '../../../shared/components/miniCarosel/MiniCarousel.js
 function ContactPage() {
   return (
     <div className="contact-page">
-      <MiniCarousel />
-      <h1>Contacto</h1>
+      
+      <h1>CONTACTANOS</h1>
       <p className="contact-description">
         ¿Tienes alguna pregunta, sugerencia o necesitas ayuda? Completa el formulario o utiliza la información de contacto a continuación.
       </p>

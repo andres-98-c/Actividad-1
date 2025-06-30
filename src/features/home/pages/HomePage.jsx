@@ -15,7 +15,7 @@ function HomePage() {
         <h2 className="home-contact-title">¿Tienes dudas? ¡Contáctanos!</h2>
         <Contact fields={['nombre', 'email', 'mensaje']} />
       </div>
-      <WhatsAppButton />
+      
     </div>
   );
 }

@@ -31,13 +31,9 @@ export const carousel = [
 ];
 export const imagedata = [
   { src: relojes3, alt: "Reloj 3" },
-  { src: icono3, alt: "Icono 3" },
-  { src: icono5, alt: "Icono 5" },
-  { src: instagram, alt: "Instagram" },
   { src: relojCuero, alt: "Reloj de Cuero" },
-  { src: rolex1, alt: "Reloj Rolex 1" },
-  { src: rolex3, alt: "Reloj Rolex 3" },
-  { src: whatsapp, alt: "WhatsApp" },
+  // { src: rolex1, alt: "Reloj Rolex 1" },
+  // { src: rolex3, alt: "Reloj Rolex 3" },
   { src: ca500, alt: "Casio CA500" },
   { src: cclasico, alt: "Casio Clásico" },
   { src: foBQ1009, alt: "Fossil BQ1009" },

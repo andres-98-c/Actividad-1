@@ -16,3 +16,9 @@ body {
   font-size: 1.3em;
   font-weight: 600;
 }
+html, body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
