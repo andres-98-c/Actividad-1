@@ -1,5 +1,5 @@
 import React from 'react';
-import '../cart/Cart.css';
+import './Cart.css';
 
 function Cart({ cart, removeFromCart, updateQuantity, onClose }) {
   const total = cart.reduce((sum, item) => sum + item.price * item.cantidad, 0);
@@ -17,9 +17,12 @@ function Cart({ cart, removeFromCart, updateQuantity, onClose }) {
               <img src={item.image} alt={item.title} className="cart-img" />
               <div>
                 <h4>{item.title}</h4>
-                <p>Precio: ${item.price}</p>
+                <p>Precio: ${item.price.toLocaleString()}</p>
                 <div className="cart-qty">
-                  <button onClick={() => updateQuantity(item.id, item.cantidad - 1)} disabled={item.cantidad <= 1}>-</button>
+                  <button
+                    onClick={() => updateQuantity(item.id, item.cantidad - 1)}
+                    disabled={item.cantidad <= 1}
+                  >-</button>
                   <span>{item.cantidad}</span>
                   <button onClick={() => updateQuantity(item.id, item.cantidad + 1)}>+</button>
                 </div>

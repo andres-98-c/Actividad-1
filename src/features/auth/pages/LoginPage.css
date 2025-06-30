@@ -21,6 +21,7 @@
   width: 350px;
   text-align: center;
   animation: modalIn 0.3s;
+  position: relative; /* Para posicionar la X */
 }
 
 @keyframes modalIn {
@@ -63,4 +64,21 @@
 
 .login-modal button[type="submit"]:hover {
   background: linear-gradient(90deg, #24a8e0 60%, #1565c0 100%);
+}
+
+/* Botón X para cerrar la ventana flotante */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  color: #888;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #e53935;
 }

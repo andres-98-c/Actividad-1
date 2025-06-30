@@ -12,27 +12,29 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route
-          path="/"
-          element={
-            <>
-              <MiniCarousel />
-              <HomePage />
-            </>
-          }
-        />
-        <Route
-          path="/contacto"
-          element={
-            <>
-              <MiniCarousel />
-              <ContactPage />
-            </>
-          }
-        />
-      </Routes>
+      <div className="main-content">
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <MiniCarousel />
+                <HomePage />
+              </>
+            }
+          />
+          <Route
+            path="/contacto"
+            element={
+              <>
+                <MiniCarousel />
+                <ContactPage />
+              </>
+            }
+          />
+        </Routes>
+      </div>
       <WhatsAppButton />
       <Footer />
     </BrowserRouter>

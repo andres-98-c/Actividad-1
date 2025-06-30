@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../components/Contact.jsx';
+import Form from '../components/Form.jsx';
 import './ContactPage.css';
 import MiniCarousel from '../../../shared/components/miniCarosel/MiniCarousel.jsx';
 
@@ -34,7 +34,8 @@ function ContactPage() {
         {/* Derecha: Formulario y asesores */}
         <div className="contact-right-box">
           <div className="contact-form-box">
-            <Contact />
+            <h2>Registrarse</h2>
+            <Form />
           </div>
           <div className="advisors-box">
             <h3>Asesores de contacto</h3>

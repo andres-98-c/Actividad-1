@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
+const MySwal = withReactContent(Swal);
 
 const LoginForm = () => {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -13,15 +17,40 @@ const LoginForm = () => {
     e.preventDefault();
     setLoading(true);
     setError('');
-    // Aquí iría tu lógica de autenticación real
+
     setTimeout(() => {
       setLoading(false);
       if (!form.email || !form.password) {
         setError('Completa todos los campos');
-      } else {
-        console.log('Login:', form);
-        // Aquí podrías redirigir o actualizar el estado global
+        return;
       }
+
+      // Obtener usuarios registrados de localStorage
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const user = users.find(
+        (u) => u.email === form.email && u.password === form.password
+      );
+
+      if (!user) {
+        setError('Usuario o contraseña incorrectos, o no registrado');
+        MySwal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Usuario o contraseña incorrectos, o no registrado',
+        });
+        return;
+      }
+
+      // Guardar sesión en localStorage
+      localStorage.setItem('session', JSON.stringify({ email: user.email }));
+      window.dispatchEvent(new Event('custom-session'));
+      
+      MySwal.fire({
+        icon: 'success',
+        title: '¡Inicio de sesión exitoso!',
+        text: `Bienvenido, ${user.email}`,
+      });
+      // window.location.href = '/'; // Descomenta si quieres redirigir al home
     }, 1000);
   };
 

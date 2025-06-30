@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from '../components/carousel/Carousel.jsx';
 import RelojesGrid from '../components/cardsRelojes/RelojesGrid.jsx';
 import WhatsAppButton from '../../../shared/components/buttons/WhatsAppButton.jsx';
-import Contact from '../../contact/components/Contact.jsx';
+import Contact from '../../contact/components/Form.jsx';
 import '../../../../src/index.css'; 
 
 function HomePage() {
